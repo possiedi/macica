@@ -1,0 +1,18 @@
+.introduction {
+  padding: 60px 30px;
+  background-image: url('../../img/img/wallpaper.jpg');
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.introduction h1::after {
+  content: "";
+  display: block;
+  width: 120px;
+  height: 2px;
+  background-color: var(--neutral-color-1);
+  margin: 10px auto 15px auto;
+}

@@ -1,0 +1,32 @@
+.work {
+  max-width: 1080px;
+  margin: 0 auto;
+  display: grid;
+  gap: 30px;
+  padding: 0 30px;
+}
+
+.work-items {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+}
+
+.pic-3 {
+  grid-column: 1 / -1;
+}
+
+.pic-3 img {
+  height: 165px;
+  width: 100%;
+}
+
+@media (max-width: 600px) {
+  .work-items {
+    grid-template-columns: 1fr;
+  }
+
+  .work-items img {
+    height: 220px;
+  }
+}

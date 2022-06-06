@@ -1,0 +1,80 @@
+:root {
+  --roboto: 'Roboto', 'sans-serif';
+  --georgia: 'Georgia', 'Times New Roman', 'Times', 'serif';
+}
+
+/* Little roboto */
+.l-r {
+  font-family: var(--roboto);
+  font-size: 0.875rem;
+  text-transform: uppercase;
+  color: var(--neutral-color-1);
+}
+
+/* Medium roboto */
+.m-r {
+  font-family: var(--roboto);
+  font-size: 1.125rem;
+  color: var(--neutral-color-2);
+  font-weight: normal;
+}
+
+/* Medium-big roboto 1 */
+.m-b-r-1 {
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  color: var(--neutral-color-1);
+  text-transform: uppercase;
+}
+
+/* Medium-big roboto 2 */
+.m-b-r-2 {
+  font-family: var(--roboto);
+  font-size: 1.5rem;
+  color: var(--neutral-color-2);
+  text-transform: uppercase;
+}
+
+/* Big roboto */
+.b-r {
+  font-family: var(--roboto);
+  font-size: 2.25rem;
+  text-transform: uppercase;
+  color: var(--neutral-color-1);
+}
+
+/* Little georgia 1 */
+.l-g-1 {
+  font-family: var(--georgia);
+  font-size: 0.875rem;
+  color: var(--neutral-color-1);
+}
+
+/* Little georgia 2 */
+.l-g-2 {
+  font-family: var(--georgia);
+  font-size: 0.875rem;
+  color: var(--neutral-color-2);
+}
+
+/* Little georgia list */
+.l-g-l {
+  font-family: var(--georgia);
+  font-size: 0.875rem;
+  color: var(--neutral-color-1);
+  line-height: 2;
+}
+
+@media(max-width: 500px) {
+  .m-b-r-1 {
+    font-size: 1.125rem;
+  }
+
+  .m-b-r-2 {
+    font-size: 1.125rem;
+  }
+
+  .b-r {
+    font-size: 1.5rem;
+  }
+}

@@ -1,0 +1,13 @@
+@import './global/reset.css';
+@import './utility/color.css';
+@import './utility/typography.css';
+@import './global/general.css';
+@import './utility/component.css';
+@import './style/header.css';
+@import './utility/menu-mobile.css';
+@import './style/introduction.css';
+@import './style/projects.css';
+@import './style/qualities.css';
+@import './style/work.css';
+@import './style/social-medias.css';
+@import './style/footer.css';
