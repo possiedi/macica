@@ -3,7 +3,7 @@
 }
 
 @media (max-width: 800px) {
-  #btn-menu {
+  .js #btn-menu {
     display: flex;
     background: none;
     border: none;
@@ -13,11 +13,11 @@
     gap: 10px;
   }
 
-  #hamburguer {
+  .js #hamburguer {
     border-top: 2px solid var(--neutral-color-1);
   }
 
-  #hamburguer::before, #hamburguer::after {
+  .js #hamburguer::before, .js #hamburguer::after {
     content: "";
     display: block;
     width: 20px;
@@ -27,7 +27,7 @@
     transition: 0.3s ease-out;
   }
 
-  #menu {
+  .js #menu {
     display: block;
     position: absolute;
     top: 97px;
@@ -41,30 +41,30 @@
     z-index: 1000;
   }
 
-  #menu li a {
+  .js #menu li a {
     display: block;
     padding: 20px 0 20px 30px;
   }
 
-  #menu a::after {
+  .js #menu a::after {
     display: none;
   }
 
-  .nav.active #menu {
+  .js .nav.active #menu {
     height: calc(100vh - 97px);
     visibility: visible;
     overflow-y: auto;
   }
 
-  .nav.active #hamburguer {
+  .js .nav.active #hamburguer {
     border-top-color: transparent;
   }
 
-  .nav.active #hamburguer::before {
+  .js .nav.active #hamburguer::before {
     transform: rotate(135deg);
   }
 
-  .nav.active #hamburguer::after {
+  .js .nav.active #hamburguer::after {
     transform: rotate(-135deg);
     position: relative;
     top: -9px;
@@ -72,11 +72,11 @@
 }
 
 @media (max-width: 500px) {
-  #menu {
+  .js #menu {
     top: 88px;
   }
 
-  .nav.active #menu {
+  .js .nav.active #menu {
     height: calc(100vh - 88px);
   }
 }

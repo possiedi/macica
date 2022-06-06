@@ -1,7 +1,7 @@
 @import './global/reset.css';
 @import './utility/color.css';
-@import './utility/typography.css';
 @import './global/general.css';
+@import './utility/typography.css';
 @import './utility/component.css';
 @import './style/header.css';
 @import './utility/menu-mobile.css';
