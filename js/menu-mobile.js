@@ -1,9 +1,11 @@
 export default class MenuMobile {
-  constructor(btnMenu, nav) {
+  constructor(btnMenu, nav, internalLinks) {
     this.btnMenu = document.getElementById(btnMenu);
     this.nav = document.querySelector(nav);
+    this.internalLinks = document.querySelectorAll(internalLinks);
 
     this.menuMobile = this.menuMobile.bind(this);
+    this.closeMenuMobile = this.closeMenuMobile.bind(this);
   }
 
   menuMobile(event) {
@@ -26,8 +28,20 @@ export default class MenuMobile {
     this.btnMenu.addEventListener('click', this.menuMobile);
   }
 
+  closeMenuMobile() {
+    this.nav.classList.remove('active');
+  }
+
+  addEventCloseMenuMobile() {
+    this.internalLinks.forEach((link) => {
+      link.addEventListener('touchstart', this.closeMenuMobile);
+      link.addEventListener('click', this.closeMenuMobile);
+    });
+  }
+
   init() {
     this.addEventMenuMobile();
+    this.addEventCloseMenuMobile();
     return this;
   }
 }
