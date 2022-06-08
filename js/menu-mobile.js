@@ -1,7 +1,7 @@
 export default class MenuMobile {
   constructor(btnMenu, nav, internalLinks) {
     this.btnMenu = document.getElementById(btnMenu);
-    this.nav = document.querySelector(nav);
+    this.nav = document.getElementById(nav);
     this.internalLinks = document.querySelectorAll(internalLinks);
 
     this.menuMobile = this.menuMobile.bind(this);
@@ -40,8 +40,10 @@ export default class MenuMobile {
   }
 
   init() {
-    this.addEventMenuMobile();
-    this.addEventCloseMenuMobile();
+    if (this.btnMenu && this.nav && this.internalLinks.length) {
+      this.addEventMenuMobile();
+      this.addEventCloseMenuMobile();
+    }
     return this;
   }
 }
