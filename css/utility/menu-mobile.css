@@ -50,21 +50,21 @@
     display: none;
   }
 
-  .js .nav.active #menu {
+  .js #nav.active #menu {
     height: calc(100vh - 97px);
     visibility: visible;
     overflow-y: auto;
   }
 
-  .js .nav.active #hamburguer {
+  .js #nav.active #hamburguer {
     border-top-color: transparent;
   }
 
-  .js .nav.active #hamburguer::before {
+  .js #nav.active #hamburguer::before {
     transform: rotate(135deg);
   }
 
-  .js .nav.active #hamburguer::after {
+  .js #nav.active #hamburguer::after {
     transform: rotate(-135deg);
     position: relative;
     top: -9px;
@@ -76,7 +76,7 @@
     top: 88px;
   }
 
-  .js .nav.active #menu {
+  .js #nav.active #menu {
     height: calc(100vh - 88px);
   }
 }

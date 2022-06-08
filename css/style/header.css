@@ -6,16 +6,16 @@
   flex-wrap: wrap;
 }
 
-.nav ul {
+#nav ul {
   display: flex;
   gap: 30px;
 }
 
-.nav a {
+#nav a {
   padding: 15px 0;
 }
 
-.nav a::after {
+#nav a::after {
   content: "";
   display: block;
   width: 0;
@@ -24,7 +24,7 @@
   transition: .3s ease-out;
 }
 
-.nav a:hover::after {
+#nav a:hover::after {
   width: 100%;
 }
 
